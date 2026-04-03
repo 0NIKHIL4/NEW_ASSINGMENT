@@ -1,0 +1,44 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #4a4a6a;
+}
+
+.required {
+  color: #e74c3c;
+  margin-left: 2px;
+}
+
+.input {
+  font-family: inherit;
+  font-size: 0.875rem;
+  padding: 0.625rem 0.75rem;
+  border: 1.5px solid #e0e3e8;
+  border-radius: 8px;
+  color: #1a1a2e;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #b0b3bc;
+}
+
+.input:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+}
+
+.readOnly {
+  background: #f5f6f8;
+  color: #6b6b8a;
+  cursor: default;
+}

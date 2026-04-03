@@ -1,0 +1,298 @@
+.preview {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.previewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 2px solid #f0f2f5;
+}
+
+.previewTitle {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.previewTitle svg {
+  color: #4361ee;
+}
+
+.liveIndicator {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #10b981;
+  letter-spacing: 0.05em;
+}
+
+.liveDot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.receipt {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.receiptHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.orderId {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.01em;
+}
+
+.orderDate {
+  font-size: 0.8125rem;
+  color: #8b8ba8;
+  margin-top: 0.125rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.375rem 0.875rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.badgeStandard {
+  background: #eef2ff;
+  color: #4361ee;
+}
+
+.badgeExpress {
+  background: #fffbeb;
+  color: #d97706;
+}
+
+.flags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.375rem 0.75rem;
+  border-radius: 8px;
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.flagInsurance {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+/* Parties */
+.parties {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background: #f8f9fb;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #eceef2;
+}
+
+.partyCard {
+  flex: 1;
+  padding: 1rem 1.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  
+}
+
+.partyDivider {
+  display: flex;
+  align-items: center;
+  padding: 0 0.25rem;
+  color: #c5c9d4;
+}
+
+.partyLabel {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8b8ba8;
+}
+
+.partyName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.partyAddress {
+  font-size: 0.75rem;
+  color: #6b6b8a;
+  line-height: 1.5;
+}
+
+.emptyState {
+  font-size: 0.8125rem;
+  color: #b0b3bc;
+  font-style: italic;
+}
+
+/* Packages */
+.packagesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.sectionTitle {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #000000;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.packageItem {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #eceef2;
+  transition: background 0.15s ease;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.packageHead {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.packageIdx {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4361ee;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.packageName {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.packageMeta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding-left: 2.125rem;
+  flex-wrap: wrap;
+}
+
+.packageMeta span {
+  font-size: 0.75rem;
+  color: #6b6b8a;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Summary */
+.summarySection {
+  border-top: 2px solid #f0f2f5;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  background-color: #4362ee; 
+  border-radius: 8px;
+}
+
+.summaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  color: #ffffff;
+  padding-left: 0.5rem;
+  
+}
+
+.summaryValue {
+  font-weight: 600;
+  color: #ffffff;
+  padding-right: 0.5rem;
+}
+
+.summaryTotal {
+  padding-top: 0.625rem;
+  padding-left: 0.5rem;
+  border-top: 1px dotted #e0e3e8;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.summaryTotal .summaryValue {
+  color: #fafafc;
+  font-size: 1.0625rem;
+}
+
+@media (max-width: 480px) {
+  .parties {
+    flex-direction: column;
+  }
+
+  .partyDivider {
+    padding: 0.25rem 1rem;
+    transform: rotate(90deg);
+  }
+
+  .receiptHeader {
+    flex-direction: column;
+  }
+}
